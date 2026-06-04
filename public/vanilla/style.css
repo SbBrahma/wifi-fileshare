@@ -1,0 +1,65 @@
+/*
+ * WiFi File Share - Windows 11 Style Sheet
+ * Supports beautiful blurry translucent mica effect and fine controls.
+ */
+
+/* Custom Segoe UI standard font matching Windows 11 styling */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;500;600;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background-size: 400% 400%;
+}
+
+/* Translucent Glass Card Effect */
+.backdrop-blur-xl {
+    backdrop-filter: blur(24px);
+    -webkit-backdrop-filter: blur(24px);
+}
+
+/* Rounded Windows 11 corners */
+.rounded-2xl {
+    border-radius: 1rem;
+}
+
+.rounded-xl {
+    border-radius: 0.75rem;
+}
+
+/* Fine-tune scrollbar matching Windows 11 layout */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(100, 116, 139, 0.2);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(100, 116, 139, 0.45);
+}
+
+/* Smooth scaling and feedback states */
+button, input, #dropzone {
+    transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Slow rotate anim for scan elements */
+@keyframes spin-slow {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-spin-slow {
+    animation: spin-slow 15s linear infinite;
+}
