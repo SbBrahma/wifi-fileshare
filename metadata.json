@@ -1,0 +1,6 @@
+{
+  "name": "WiFi File Sharing",
+  "description": "A secure, modern, desktop-and-mobile peer-to-peer file sharing application using PeerJS and WebRTC with a Windows 11 Fluent style.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
